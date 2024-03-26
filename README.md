@@ -27,8 +27,8 @@
 | 9.    | Baseline LGBM Model|  3_baseline_machine_learning_models.ipynb |
 | 10.    | Baseline Ensemble Model|  3_baseline_machine_learning_models.ipynb |
 | 12.    | Baseline MLP (Colab)|  4_baseline_mlp(colab).ipynb |
-| 13.    | Final Models|  5_final_models.ipynb |
-| 14.    | Final Summary|  5_final_models.ipynb |
+| 13.    | Final Models|  5_final_ensemble_models(colab) |
+| 14.    | Final Summary|  5_final_ensemble_models(colab) |
 
 <hr><div>
 
