@@ -34,7 +34,7 @@
 
 ## Our Work
 
-**Summary Table Results Of All Models **
+**Summary Table Results Of All Models**
 
 | Model | Featurizations | Hyperparameters | Test RMSLE |
 |---|---|---|---|
