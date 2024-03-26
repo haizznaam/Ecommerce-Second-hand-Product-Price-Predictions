@@ -10,26 +10,7 @@
 
 <hr><div>
 
-## Our Work
-
-### Summary Table Results Of All Models 
-
-| Model | Featurizations | Hyperparameters | Test RMSLE |
-|---|---|---|---|
-| Baseline Ridge | BOW | alpha=10 | 0.472 |
-| Baseline LGBM | BOW | nest=1500, lr=0.05, leaves=50 | 0.47 |
-| Baseline Ensemble (50% Ridge + 50% LGBM) | BOW | -- | 0.46 |
-| Baseline MLP | Concatenate Text, OneHotEncoding | batch = 512 | 0.42 |
-||
-| Ridge 1 | BOW | alpha=10 | 0.471 |
-| Ridge 2 | TFIDF | alpha=10 | 0.467 |
-| LGBM 1 | BOW | nest=1500, lr=0.05, leaves=50 | 0.471 |
-| LGBM 2 | TFIDF | nest=1500, lr=0.05, leaves=50 | 0.47 |
-| MLP 1 | 256-64-64-32 | Adam, Batch=4096 | 0.418 |
-| MLP 2 | 1024-512-256-128-64-32 | Adam, Batch=4096 | 0.413 |
-| MLP 3 | MLP2 + BN + dropout | Adam, Batch=4096 | 0.415 |
-||
-| Final Model - Ensemble | MLP 1 + MLP 2 + Ridge 1 + Ridge 2 | 0.9 MLP + 0.1 Ridge | **0.404** |
+## Table of Contents
 
  **All Experimentation and Models are in .ipynb files. Table of Contents and sections in .ipynb files as below :** 
 
@@ -48,3 +29,26 @@
 | 12.    | Baseline MLP (Colab)|  4_baseline_mlp(colab).ipynb |
 | 13.    | Final Models|  5_final_models.ipynb |
 | 14.    | Final Summary|  5_final_models.ipynb |
+
+<hr><div>
+
+## Our Work
+
+**Summary Table Results Of All Models **
+
+| Model | Featurizations | Hyperparameters | Test RMSLE |
+|---|---|---|---|
+| Baseline Ridge | BOW | alpha=10 | 0.472 |
+| Baseline LGBM | BOW | nest=1500, lr=0.05, leaves=50 | 0.47 |
+| Baseline Ensemble (50% Ridge + 50% LGBM) | BOW | -- | 0.46 |
+| Baseline MLP | Concatenate Text, OneHotEncoding | batch = 512 | 0.42 |
+||
+| Ridge 1 | BOW | alpha=10 | 0.471 |
+| Ridge 2 | TFIDF | alpha=10 | 0.467 |
+| LGBM 1 | BOW | nest=1500, lr=0.05, leaves=50 | 0.471 |
+| LGBM 2 | TFIDF | nest=1500, lr=0.05, leaves=50 | 0.47 |
+| MLP 1 | 256-64-64-32 | Adam, Batch=4096 | 0.418 |
+| MLP 2 | 1024-512-256-128-64-32 | Adam, Batch=4096 | 0.413 |
+| MLP 3 | MLP2 + BN + dropout | Adam, Batch=4096 | 0.415 |
+||
+| Final Model - Ensemble | MLP 1 + MLP 2 + Ridge 1 + Ridge 2 | 0.9 MLP + 0.1 Ridge | **0.404** |
