@@ -45,10 +45,15 @@
 ||
 | Ridge 1 | BOW | alpha=10 | 0.471 |
 | Ridge 2 | TFIDF | alpha=10 | 0.467 |
+| Ridge 1 + Ridge 2| 0.4 Ridge1 + 0.6 Ridge2|-- |0.462|
+||
 | LGBM 1 | BOW | nest=1500, lr=0.05, leaves=50 | 0.471 |
 | LGBM 2 | TFIDF | nest=1500, lr=0.05, leaves=50 | 0.47 |
 | MLP 1 | 256-64-64-32 | Adam, Batch=4096 | 0.418 |
 | MLP 2 | 1024-512-256-128-64-32 | Adam, Batch=4096 | 0.413 |
 | MLP 3 | MLP2 + BN + dropout | Adam, Batch=4096 | 0.415 |
+
+| MLP 1 + MLP 2| 0.45 MLP1 + 0.55 MLP2|-- |0.407|
+
 ||
 | Final Model - Ensemble | MLP 1 + MLP 2 + Ridge 1 + Ridge 2 | 0.9 MLP + 0.1 Ridge | **0.404** |
