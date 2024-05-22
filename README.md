@@ -12,10 +12,10 @@ In this competition, Mercari’s challenging you to build an algorithm that auto
 
 ##
   **Team member**
-   * Nguyen Ha Phuong
+   * Tran Hai Nam (Group Leader)
    * Nguyen Minh Tu
+   * Nguyen Ha Phuong
    * Vu Trong Manh
-   * Tran Hai Nam
 
 <hr><div>
 
