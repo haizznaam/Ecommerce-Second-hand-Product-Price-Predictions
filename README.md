@@ -10,12 +10,12 @@ Mercari, Japan’s biggest community-powered shopping app, knows this problem de
 
 In this competition, Mercari’s challenging you to build an algorithm that automatically suggests the right product prices. You’ll be provided user-inputted text descriptions of their products, including details like product category name, brand name, and item condition.
 
-<!-- ##
+##
   **Team member**
    * Nguyen Ha Phuong
    * Nguyen Minh Tu
    * Vu Trong Manh
-   * Tran Hai Nam -->
+   * Tran Hai Nam
 
 <hr><div>
 
@@ -45,7 +45,7 @@ In this competition, Mercari’s challenging you to build an algorithm that auto
 
 **Summary Table Results Of All Models**
 
-| Model | Featurizations | Hyperparameters | Test RMSLE | Test RMSE|
+| Model | Featurizations | Hyperparameters | Test RMSLE |
 |---|---|---|---|
 | Baseline Ridge | BOW | alpha=10 | 0.472 |
 | Baseline LGBM | BOW | nest=1500, lr=0.05, leaves=50 | 0.47 |
@@ -61,6 +61,9 @@ In this competition, Mercari’s challenging you to build an algorithm that auto
 | MLP 1 | 256-64-64-32 | Adam, Batch=4096 | 0.418 |
 | MLP 2 | 1024-512-256-128-64-32 | Adam, Batch=4096 | 0.413 |
 | MLP 3 | MLP2 + BN + dropout | Adam, Batch=4096 | 0.415 |
+
 | MLP 1 + MLP 2| 0.45 MLP1 + 0.55 MLP2|-- |0.407|
+
 ||
 | Final Model - Ensemble | MLP 1 + MLP 2 + Ridge 1 + Ridge 2 | 0.9 MLP + 0.1 Ridge | **0.404** |
+
