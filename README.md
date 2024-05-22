@@ -61,9 +61,7 @@ In this competition, Mercari’s challenging you to build an algorithm that auto
 | MLP 1 | 256-64-64-32 | Adam, Batch=4096 | 0.418 |
 | MLP 2 | 1024-512-256-128-64-32 | Adam, Batch=4096 | 0.413 |
 | MLP 3 | MLP2 + BN + dropout | Adam, Batch=4096 | 0.415 |
-
 | MLP 1 + MLP 2| 0.45 MLP1 + 0.55 MLP2|-- |0.407|
-
 ||
 | Final Model - Ensemble | MLP 1 + MLP 2 + Ridge 1 + Ridge 2 | 0.9 MLP + 0.1 Ridge | **0.404** |
 
